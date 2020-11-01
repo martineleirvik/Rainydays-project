@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: "Open Sans", Veranda, "Segoe UI",  sans-serif;
+}
+
+nav {
+    background-color: #D9DEE3;
+    height: 85px; 
+    padding: 11px 40px;
+    font-style: italic;
+    width: 100%;
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+    
+.icon {
+    float: right;
+    font-size: 30px;
+}
+    
+#frontpagemobile, #logomobile {
+    display: none;
+}
+
+#frontpage{
+    width: 100%;
+    max-height: 90vh;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.Shopbutton {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.Shopbutton #men {
+    padding: 10px 32px 10px 32px;
+    background-color: transparent;
+    text-decoration: none;
+    border: #707070 2px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 7px 0.2px #9c9b9b;
+    color: #000;
+}
+
+.Shopbutton #women {
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    text-decoration: none;
+    border:#707070 2px solid;
+    border-radius: 15px;
+    margin-right: 10px;
+    box-shadow: 0 0 7px 0.2px #9c9b9b;
+    color: #000;
+}
+
+
+@media only screen and (max-width:800px) {
+
+    body {
+        width: 375px;
+    }
+    
+
+     /* index */
+
+     #frontpage {
+        display: none;
+
+    }
+
+    .Shopbutton {
+        width: 300px;
+        margin-left: 45px;
+    }
+
+    #women {
+        width: 160px;
+        padding: 0;
+    }
+
+    #men {
+        width: 160px;
+    }
+
+    body {
+        background: url("../images/smallfrontpage.jpg") no-repeat center center fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #logomobile {
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a{
+        padding: 10px;
+        margin: 0;
+    
+    }
+
+    .icon {
+        font-size: 20px;
+        padding: 0;
+    }
+
+
+
+}
