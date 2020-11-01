@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Rainy Days</title>
+      <meta name="description" content="Shop now. Fill in your information and paymentmethod, and your order will soon be on it`s way.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8c6eeba9fa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+          <a href= "index.html"> <img src="images/Rainydayslogo.png" id="logo" alt="Rainydays Logo"></a>
+          <nav>
+            <ul>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="About.html">About us</a></li>
+              <div class="icon"><a href="Chechout.html"><i class="fas fa-shopping-cart"></i></a></div>
+              <div class="icon"><a href="#"><i class="fas fa-user-circle"></i></a></div>
+              <div class="icon"><a href="#"><i class="fas fa-search"></i></a></div>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class="container-3">
+            <div class="box-summary">
+               <h1 id="summary">Order summary</h1>
+               <img src="images/jacket.jpg" id="checkoutjacket">
+               <p class="top" id="product">Product name</p>
+               <p class="top">Colour: Black</p>
+               <p class="top">Size: M</p>
+               <p class="top">Quantity: 1</p>
+               <p class="top" id="NOK1">NOK 3499</p>
+               <p>1 Product(s)</p>
+               <p>NOK 3499</p>
+               <p>Shipping</p>
+               <p>NOK 49</p>
+               <p>Total:</p>
+               <p>NOK 3548</p>
+               <p>I agree to the Terms & Conditions & Privacy Policy</p>
+            </div>
+           <div class="box-paymentform">
+           <form action="Checkoutsuccess.html" method="GET">
+             <fieldset>
+               <legend id="pay"> Payment</legend>
+               <input type="radio" name="paymentmethod" value="Paypal" id="Paypal"><label for="Paypal">Paypal</label>
+               <input type="radio" name="paymentmethod" value="Credit Card" id="Credit Card"><label for="Credit Card">Credit Card</label>
+               <label for="name">Card Holder*</label>
+               <input type="text" name="name" id="name" class="form__input" required>
+               <label for="cardnumber">Card Number*</label>
+               <input type="number" name="cardnumber" id="cardnumber" class="form__input" required>
+               <label for="month">Month*</label>
+               <input type="month" name="month" id="month" class="form__input" required>
+               <label for="year">Year*</label>
+               <input type="number" name="year" id="year" class="form__input" required>
+               <label for="CVC">CVC/CCV*</label>
+               <input type="number" name="CVC" id="CVC" class="form__input" required>
+               <input type="submit" value="Place order">
+             </fieldset>
+          </div>
+        </div>
+        </main>
+    </body>
+</html>
+
+
+
+
+.jacket h1 {
+  text-align: center;
+}
+  
+
+
+#jacketspesific {
+  float: left;
+  max-width: 500px;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 30px;
+}
