@@ -345,7 +345,6 @@ input[type=submit] {
 .checkout3 fieldset {
     border: none;
     padding-left: 40px;
-    display: flex;
     line-height: 30px;
 }
 
