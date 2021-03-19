@@ -371,6 +371,37 @@ input[type=submit] {
     padding-top: 20px;
 }
 
+.button {
+    color: #ffffff;
+    background-color: #968972;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 0.2px #9c9b9b;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 30px 120px;  
+    text-decoration: none;
+    
+}
+
+.pay-check {
+    padding: 30px 45px;
+}
+
+.input {
+    display: block;
+    width: 400px;
+    border: none;
+    margin-bottom: 13px;
+    margin-top: 5px;
+}
+
+.card {
+    margin-top: 10px;
+}
+
 
 
 /* jacketlist */
@@ -501,14 +532,17 @@ input[type=submit] {
         max-width: 85%;
     }
 
-    .form {
+    .fieldset-contact input {
         max-width: 85%;
     }
 
-    input[type=submit] {
-        justify-content: center;
+    .fieldset-contact [type=submit] {
+        position: relative;
+        transform: translateX(-50%);
     }
-    
+
+
+
 
     /* checkoutsuccess */
 
@@ -539,7 +573,7 @@ input[type=submit] {
     }
 
     .form {
-        max-width: 100%;
+        max-width: 0%;
     }
     
 

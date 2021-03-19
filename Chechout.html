@@ -26,7 +26,7 @@
             <ul>
               <li><a href="Contact.html">Contact</a></li>
               <li><a href="About.html">About us</a></li>
-              <div class="icon"><a href="Chechout.html"><i class="fas fa-shopping-cart"></i></a></div>
+              <div class="icon"><a href="Chechout.html"><i class="fas fa-shopping-cart"></i><span>0</span></a></div>
               <div class="icon"><a href="#"><i class="fas fa-user-circle"></i></a></div>
               <div class="icon"><a href="#"><i class="fas fa-search"></i></a></div>
             </ul>
@@ -52,52 +52,51 @@
                <p> <input type="checkbox">   I agree to the Terms & Conditions & Privacy Policy</p>
             </div>
 
-           <div class="checkout3">
 
-           <form action="Checkoutsuccess.html" method="GET">
 
-             <fieldset>
+            <div class="checkout3">
+              <div class="pay-check">
+                <h1 id="pay">Payment</h1>
 
-               <legend id="pay"> Payment</legend>
-               <div class="cards">
                 <input type="radio" name="paymentmethod" value="Paypal" id="Paypal"><label for="Paypal">Paypal</label>
                 <input type="radio" name="paymentmethod" value="Credit Card" id="Credit Card"><label for="Credit Card">Credit Card</label>
+          
+                <div class="card">
+                <label class="label">Card holder:</label>
+                <input type="text" class="input" name="card-holder" placeholder="Card holder">
+                </div>
+          
+                <div class="card">
+                  <label class="label">Card number:</label>
+                  <input type="text" class="input" name="card-number" placeholder="Card Number" data-mask="0000 0000 0000 0000">
+                  </div>
+          
+                  <div class="card-2">
+
+                    <div class="card-item">
+                      <label class="label">Expiry date:</label>
+                      <input type="text" class="input" name="expiry_date" placeholder="00 / 00" data-mask="00 / 00">
+                    </div>
+                    <div class="card-item">
+                      <label class="label">CVC:</label>
+                      <input type="text" class="input" name="cvc" placeholder="000" data-mask="000">
+                    </div>
+          
+                  </div>
+          
+                  <div class="button">
+                    <a href="Checkoutsuccess.html">Place order</a>
+                  </div>
+          
               </div>
-
-               <label for="name">Card Holder*</label>
-               <input type="text" name="name" id="name" class="form">
-               <div class="form-error" id="nameerror">Please enter your name</div>
-
-
-               <label for="cardnumber">Card Number*</label>
-               <input type="number" name="cardnumber" id="cardnumber" class="form">
-               <div class="form-error" id="cardnumbererror">Must be 16 numbers</div>
-
-
-               <label for="month">Month & Year*</label>
-               <input type="month" name="month" id="month" class="form">
-               <div class="form-error" id="montherror">Please enter your month</div>
-
-
-               <label for="year">Year*</label>
-               <input type="number" name="year" id="year" class="form">
-               <div class="form-error" id="yearerror">Must be 4 numbers</div>
-
-
-               <label for="CVC">CVC/CCV*</label>
-               <input type="number" name="CVC" id="CVC" class="form">
-               <div class="form-error" id="CVC-error">Must be 3 numbers</div>
-
-               <label for="CVC">CVC</label>
-               <input type="text" class="form" name="cvc" placeholder="000" data-mask="000">
-
-
-               <input type="submit" value="Place order">
-
-             </fieldset>
+            </div>
           </div>
-        </div>
+
         </main>
-      <script src="js/checkout.jssss"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+      <script src="js/checkout.jsss"></script>
+      <script src="js/chart.js"></script>
     </body>
 </html>
