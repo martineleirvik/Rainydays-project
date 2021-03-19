@@ -53,26 +53,51 @@
             </div>
 
            <div class="checkout3">
+
            <form action="Checkoutsuccess.html" method="GET">
+
              <fieldset>
+
                <legend id="pay"> Payment</legend>
-               <div class="cards"><input type="radio" name="paymentmethod" value="Paypal" id="Paypal"><label for="Paypal">Paypal</label>
-               <input type="radio" name="paymentmethod" value="Credit Card" id="Credit Card"><label for="Credit Card">Credit Card</label>
+               <div class="cards">
+                <input type="radio" name="paymentmethod" value="Paypal" id="Paypal"><label for="Paypal">Paypal</label>
+                <input type="radio" name="paymentmethod" value="Credit Card" id="Credit Card"><label for="Credit Card">Credit Card</label>
               </div>
+
                <label for="name">Card Holder*</label>
-               <input type="text" name="name" id="name" class="form__input" required>
+               <input type="text" name="name" id="name" class="form">
+               <div class="form-error" id="nameerror">Please enter your name</div>
+
+
                <label for="cardnumber">Card Number*</label>
-               <input type="number" name="cardnumber" id="cardnumber" class="form__input" required>
-               <label for="month">Month*</label>
-               <input type="month" name="month" id="month" class="form__input" required>
+               <input type="number" name="cardnumber" id="cardnumber" class="form">
+               <div class="form-error" id="cardnumbererror">Must be 16 numbers</div>
+
+
+               <label for="month">Month & Year*</label>
+               <input type="month" name="month" id="month" class="form">
+               <div class="form-error" id="montherror">Please enter your month</div>
+
+
                <label for="year">Year*</label>
-               <input type="number" name="year" id="year" class="form__input" required>
+               <input type="number" name="year" id="year" class="form">
+               <div class="form-error" id="yearerror">Must be 4 numbers</div>
+
+
                <label for="CVC">CVC/CCV*</label>
-               <input type="number" name="CVC" id="CVC" class="form__input" required>
+               <input type="number" name="CVC" id="CVC" class="form">
+               <div class="form-error" id="CVC-error">Must be 3 numbers</div>
+
+               <label for="CVC">CVC</label>
+               <input type="text" class="form" name="cvc" placeholder="000" data-mask="000">
+
+
                <input type="submit" value="Place order">
+
              </fieldset>
           </div>
         </div>
         </main>
+      <script src="js/checkout.js"></script>
     </body>
 </html>

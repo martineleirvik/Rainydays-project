@@ -23,6 +23,10 @@ nav {
     width: 100%;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 #hamburgermenu {
     display: none;
     margin:  0 40px 0 0;
@@ -258,7 +262,7 @@ header {
     padding-top: 30px;
 }
 
-.form__input {
+.form {
     display: block;
     width: 400px;
     border: none;
@@ -280,8 +284,12 @@ input[type=submit] {
     padding-bottom: 20px;
 }
 
-
-
+.submitted {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
 
 
 /* checkout */
@@ -365,8 +373,6 @@ input[type=submit] {
 
 
 
-
-
 /* jacketlist */
 
 #headingwomen {
@@ -420,16 +426,19 @@ input[type=submit] {
 }
     
 
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 3px;
+    padding-bottom: 0.1rem;
+}
 
 
+/* media queries */
 
-/* media queries designed for iPhone X display*/
-
-@media only screen and (max-width:800px) {
+@media (max-width:700px) {
     
-    body {
-        width: 375px;
-    }
 
     nav {
         display: flex;
@@ -439,7 +448,7 @@ input[type=submit] {
 
     .icon {
         font-size: 20px;
-        
+
     }
 
    
@@ -468,7 +477,11 @@ input[type=submit] {
     /* jacketlist */
 
     .bar li {
-        margin: 5px;
+        margin: 9px;
+    }
+
+    .product-card {
+
     }
 
 
@@ -477,44 +490,26 @@ input[type=submit] {
 
     .container-2 {
         flex-direction: column;
+        
     }
 
     .box-contact {
-        width: 300px;
+        max-width: 90%;
     }
-    
+
     .box-form {
-        max-width: 300px;
-        margin-top: 50px;
-        margin-left: 30px;
-        margin-right: 0;
-        
-    }  
-    
-    .box-form {
-        max-width: 300px;
-        margin-top: 50px;
-        margin-left: 30px;
-        margin-right: 0;
-        
-    }   
-    
-    .fieldset-contact {
-        padding-left: 15px;
-        max-width: 150px;
-        
+        max-width: 85%;
+    }
+
+    .form {
+        max-width: 85%;
     }
 
     input[type=submit] {
-        margin: 70px;
+        justify-content: center;
     }
-
-    .form__input {
-        max-width: 270px;
-    }
-
-
     
+
     /* checkoutsuccess */
 
     .check {
@@ -530,24 +525,21 @@ input[type=submit] {
 
     /* checkout */
 
+
     .container-3 {
         display: block;
-        max-width: 350px;
     }
 
     #checkoutjacket {
         max-width: 120px;
     }
 
-    .checkout3 {
-        margin: 40px 0;
-        width: 300px;
-        margin-left: 30px;
+    .checkout3 fieldset {
+        max-width: 70%;
     }
 
-    .checkout3 fieldset {
-        max-width: 150px;
-        padding-left: 15px;
+    .form {
+        max-width: 100%;
     }
     
 
@@ -555,28 +547,25 @@ input[type=submit] {
     /* about */
 
     .container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        
     }
 
     .aboutpicture {
-        max-width: 250px;
+        max-width: 80%;
     }
 
     .box-images {
         grid-template-columns: auto;
-        margin-left: 60px;
     }
 
     .box-about {
-        max-width: 290px;
-        margin-left: 30px;
+        max-width: 80%;
     }
 
     #aboutus {
-        max-width: 250px;  
+        max-width: 90%;
     }
-
-
 
 
  }

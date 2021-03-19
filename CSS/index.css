@@ -17,6 +17,9 @@ nav {
     width: 100%;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 nav li {
     display: inline-block;
@@ -34,6 +37,7 @@ nav a {
     padding: 10px 20px;
     text-align: center;
 }
+
     
 .icon {
     float: right;
@@ -82,12 +86,16 @@ nav a {
 }
 
 
+
+
+
 @media only screen and (max-width:800px) {
 
-    body {
-        width: 375px;
-    }
+
+
     
+
+
 
      /* index */
 

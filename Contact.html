@@ -39,18 +39,30 @@
              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
            </div>
            <div class="box-form">
-             <form action="form-success.php" method="GET">
+             <form action="form-success.php" method="POST">
+              
              <div class="fieldset-contact">
-              <label for="name">Your name</label>
-              <input type="text" name="name" id="name" class="form__input" required>
-              <label for="email">Your email</label>
-              <input type="email" name="email" id="email" class="form__input" required>
-              <label for="text">Your message</label>
-              <input for="text" name="text" id="text" class="form__input" required>
+
+              <div id="message"></div>
+
+              <label for="name">Your name (required)</label>
+              <input type="text" name="name" id="name" class="form">
+              <div class="form-error" id="nameerror">Please enter your name</div>
+
+              <label for="email">Your email (required)</label>
+              <input type="email" name="email" id="email" class="form">
+              <div class="form-error" id="emailerror">Please enter a valid email address</div>
+
+              <label for="text">Your message (minimum 10 characters)</label>
+              <input for="text" name="text" id="text" class="form">
+              <div class="form-error" id="texterror">Must be at least 10 characters</div>
+
               <input type="submit" value="Submit">
+
              </div>
            </div>
           </div>
         </main>
+      <script src="js/contact.js"></script>
     </body>
 </html>
