@@ -33,7 +33,7 @@ function validateForm() {
 
 }
 
-form.addEventListener("submit", validateForm)
+form.addEventListener("submit", validateForm);
 
 
 function checkLength(value, len) {
