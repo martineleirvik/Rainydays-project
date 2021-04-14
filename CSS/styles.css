@@ -150,8 +150,6 @@ header {
 
 
 
-
-
 /* jacketspesific */
 
 .container-1 {
@@ -417,6 +415,8 @@ input[type=submit] {
     text-align: center;
     border: solid 1px #000000;
     margin: 20px;
+    color: #000000;
+    text-decoration: none;
 }
 
 .product img {
@@ -525,6 +525,12 @@ input[type=submit] {
 
 
     /* jacketlist */
+
+    .jackets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
 
     .bar li {
         margin: 9px;
