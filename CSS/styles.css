@@ -406,6 +406,25 @@ input[type=submit] {
 
 /* jacketlist */
 
+.jackets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px;
+}
+
+.product {
+    padding: 15px;
+    text-align: center;
+    border: solid 1px #000000;
+    margin: 20px;
+}
+
+.product img {
+    width: 100%;
+}
+
+
+
 #headingwomen {
     text-align: center;
     padding: 20px;
