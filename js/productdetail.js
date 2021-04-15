@@ -32,7 +32,7 @@ fetchJacket();
 function createHTML(detail) {
     textContainer.innerHTML = 
         `<h1>${detail.name}</h1>
-        <p id="NOK">${detail.prices.currency_prefix}${detail.prices.price} </p>
+        <p id="price">${detail.prices.currency_prefix}${detail.prices.price} </p>
         `
 }
 
