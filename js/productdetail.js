@@ -1,4 +1,6 @@
-const detailContainer = document.querySelector(".jacketdetail")
+const imageContainer = document.querySelector(".jacketdetail")
+const textContainer = document.querySelector(".box-22")
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -15,6 +17,7 @@ async function fetchJacket() {
         console.log(detail);
 
         createHTML(detail);
+        makeHTML(detail);
 
     }
 
@@ -27,23 +30,15 @@ fetchJacket();
 
 
 function createHTML(detail) {
-    detailContainer.innerHTML = 
+    textContainer.innerHTML = 
         `<h1>${detail.name}</h1>
-        <img src ="${detail.images[0].src}" alt="${detail.name}">
-        <p> Price: ${detail.prices.currency_prefix}${detail.prices.price}</p>
+        <p id="NOK">${detail.prices.currency_prefix}${detail.prices.price} </p>
         `
 }
 
-
-
-
-
-
-
-
-
-
-
-
+function makeHTML(detail) {
+    imageContainer.innerHTML = 
+        `<img src ="${detail.images[0].src}" class="box-1" alt="${detail.name}">`
+}
 
 
