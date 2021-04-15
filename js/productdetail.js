@@ -40,5 +40,3 @@ function makeHTML(detail) {
     imageContainer.innerHTML = 
         `<img src ="${detail.images[0].src}" class="box-1" alt="${detail.name}">`
 }
-
-

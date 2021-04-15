@@ -517,6 +517,7 @@ input[type=submit] {
 
    .box-1 {
         margin-right: 100px;
+        max-width: 100%;
     }
 
     #sizeguide {
