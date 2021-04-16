@@ -1,10 +1,12 @@
 const url = "http://www.flowerpower-ml.no/content-management-systems/wp-json/wc/store/products/?per_page=100";
 const jacketsContainer = document.querySelector(".jackets");
 
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFix = proxy + url;
 
 async function getProducts() {
     try{
-        const response = await fetch(url);
+        const response = await fetch(corsFix);
         const getResults = await response.json();
         createHTML(getResults);
     }
