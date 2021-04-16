@@ -9,9 +9,12 @@ console.log(id);
 
 const url = "http://www.flowerpower-ml.no/content-management-systems/wp-json/wc/store/products/" + id;
 
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFix = proxy + url;
+
 async function fetchJacket() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(corsFix);
         const detail = await response.json();
         
         console.log(detail);
